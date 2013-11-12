@@ -8,6 +8,7 @@ $navbar-default-brand-color: 		#c0392b;
 $navbar-default-link-hover-color: 	#c0392b;
 $jumbotron-bg: 						white;
 $btn-primary-bg:					#c0392b;
+$brand-primary:						#c0392b;
 
 @import 'bootstrap';
 
@@ -22,5 +23,5 @@ $btn-primary-bg:					#c0392b;
 
 .navbar-right {
 	font-weight: 	bold;
-	font-size:		20px;
+	font-size:		15px;
 }
