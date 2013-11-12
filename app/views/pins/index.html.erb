@@ -1,0 +1,37 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <div class="panel-title">
+      <h1>Pins</h1>
+    </div>
+  </div>
+
+<div class="panel-body">
+  <table>
+    <thead>
+      <tr>
+        <th>Description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @pins.each do |pin| %>
+        <tr>
+          <td><%= pin.description %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+</div>
+
+<br>
+<div class="panel-footer">
+  <% @pins.each do |pin| %>
+    <%= link_to 'New Pin', new_pin_path %> |
+    <%= link_to 'View', pin %> |
+    <%= link_to 'Edit', edit_pin_path(pin) %> |
+    <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+  <% end %>  
+</div>
