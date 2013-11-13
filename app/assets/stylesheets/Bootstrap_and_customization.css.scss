@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=lato:400,700);
 
-body {background-image:url('bodybg.png');}
+body {background-image: asset-url('bodybg.png');}
 
 $font-family-sans-serif: 			'Lato', 'Helvetica Neue', Helvitica, Arial, sans-serif;
 $nav-bar-height:					45px;
-$nav-bar-default-bg:				white;
+$nav-bar-default-bg-color:			white;
 $navbar-default-brand-color: 		#FF00FF;
 $navbar-default-brand-hover-color:	#FF00FF;
 $navbar-default-link-color:			#FF00FF;
